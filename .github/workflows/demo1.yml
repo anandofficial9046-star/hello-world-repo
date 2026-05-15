@@ -40,5 +40,5 @@ jobs:
 
       - name: Cleanup Container
         run: |
-          docker stop mynginx
-          docker rm mynginx
+          docker stop myapp
+          docker rm myapp
