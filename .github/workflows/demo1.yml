@@ -28,7 +28,7 @@ jobs:
 
       - name: Run Docker Container
         run: |
-          docker run -d -p 8080:80
+          docker run -d -p 8080:80 myapp
 
       - name: Verify Running Container
         run: |
