@@ -28,7 +28,7 @@ jobs:
 
       - name: Run Docker Container
         run: |
-          docker run -d -p 8080:80 myapp
+          docker run -d -p 8080:80  --name mycontainer myapp
 
       - name: Verify Running Container
         run: |
@@ -40,5 +40,5 @@ jobs:
 
       - name: Cleanup Container
         run: |
-          docker stop myapp
-          docker rm myapp
+          docker stop mycontainer
+          docker rm mycontainer
