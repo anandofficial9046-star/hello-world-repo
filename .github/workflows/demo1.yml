@@ -1,4 +1,4 @@
-name: Nginx Docker CI Pipelines
+name: Nginx Docker CI Pipeliness
 
 on:
   push:
