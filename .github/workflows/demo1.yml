@@ -3,11 +3,11 @@ name: Nginx Docker CI Pipeline
 on:
   push:
     branches:
-      - main
+      - cicd_nginx
 
   pull_request:
     branches:
-      - main
+      - cicd_nginx
 
 jobs:
   docker-build:
