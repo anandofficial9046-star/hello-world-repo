@@ -20,7 +20,7 @@ jobs:
 
       - name: Build Docker Image
         run: |
-          docker build -t nginx-html-app .
+          docker build -t myapp .
 
       - name: Verify Docker Image
         run: |
@@ -28,7 +28,7 @@ jobs:
 
       - name: Run Docker Container
         run: |
-          docker run -d -p 8080:80 --name mynginx nginx-html-app
+          docker run -d -p 8080:80
 
       - name: Verify Running Container
         run: |
